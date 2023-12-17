@@ -11,3 +11,4 @@ RECEIVED=$(ifconfig "$net_device" | awk '/RX packets/ {print $6$7}')
 
 printf "%s\n" "$(tput bold)📼 TRANSMITTED $(tput sgr0): $TRANSMITTED"
 printf "%s\n" "$(tput bold)📡 RECEIVED $(tput sgr0): $RECEIVED"
+```
