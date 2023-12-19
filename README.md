@@ -10,7 +10,7 @@ TRANSMITTED=$(ifconfig "$net_device" | awk '/TX packets/ {print $6$7}')
 RECEIVED=$(ifconfig "$net_device" | awk '/RX packets/ {print $6$7}')
 
 printf "%s\n" "$(tput bold)📼 TRANSMITTED $(tput sgr0): $TRANSMITTED"
-printf "%s\n" "$(tput bold)📡 RECEIVED $(tput sgr0): "
+printf "%s\n" "$(tput bold)📡 RECEIVED $(tput sgr0): $RECEIVED"
 ```
 
 currently working to get the data seperately. working out on the script to catch up. 
